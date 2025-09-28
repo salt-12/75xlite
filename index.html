@@ -1,0 +1,167 @@
+﻿<html manifest="SALT.manifest">
+  <style>
+    body{color: white; background-image:url(1.jpg); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
+    input{width:25px;height:25px;background-color: transparent;}
+        button {
+                    background-color: white;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    text-align: center;
+        }
+        button:hover {
+                    box-shadow: 0 5px 50px 0 white;
+                    color: white;
+                    border-radius: 10px;
+        }</style>
+<head>
+<meta charset="utf-8">
+<title>NIGHT KING 7.5X FW Lite</title>
+<link rel="shortcut icon" href="favicon.ico"></link>
+<link rel="stylesheet prefetch" href="Style.css">
+    <script>
+        document.cookie = 'kex=1';
+    </script>
+<script>
+function DLProgress(e){
+	parent.ScrOverlay.style.display="block";
+	Percent=(Math.round(e.loaded / e.total * 100));
+	parent.cacheUPDtxt.innerHTML="Installing Offline Cache: " + Percent + "%";
+	parent.CacheBar.style.width=Percent + '%';
+}
+function DisplayCacheProgress(){
+	setTimeout(function(){parent.cacheUPDtxt.innerHTML="Cache Installed Successfully.Turn off Internet & Reopen the Browser!!";},1000);}
+	window.applicationCache.addEventListener("progress",DLProgress,false);
+	window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+	window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+	window.applicationCache.onerror=function(e){parent.cacheUPDtxt.innerHTML="Error Installing Cache";
+};
+</script>
+<script>
+    function showdate() {
+  var dt = new Date();
+    Hour= dt.getHours();
+  Minute= dt.getMinutes();
+     Day=dt.getDate();
+   Month=dt.getMonth()+1;
+   Year=dt.getFullYear();
+if (Minute < 10) { Minute = "0" + Minute; };
+if (Hour < 10) { Hour = "0" + Hour; };
+document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
+document.getElementById("clock").innerHTML = (Hour+":"+Minute);
+  }
+  
+  setInterval(showdate,0);
+</script>
+</head>
+<body class="bg-darker">
+<div id="container">
+<div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
+<div id=CacheProgress><div id=CacheBar></div></div></div>
+<hr><span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:white;'>NIGHT KING 7.5X FW Lite&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+<hr>
+<div class="about" ><a href="about.html" >About Us</a></div>
+<div id="myModal" class="modal">
+  <!-- MODAL CONTENTS -->
+  <div class="modal-content">
+  <span class="close"></span>
+    <div class="modal-body">
+
+    <br><br><br>
+    </div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<div class="theme" ><a href="readme.html" >Readme</a></div>
+<h1 id=msgs2 style='font-size:25px;text-align:center;color: yellow;'>STATUS</h1>
+<hr>
+<div style="text-align:center" id="MyItems">
+    <br>
+    <div style=font-size:20px;text-align:center;color:yellow;>GOLDHEN / MIRA / BINLOADER / ENABLE & DISABLE UPDATE</div>
+	<a href="goldhen212.html"><button style='font-size:20px;text-align:center;color:white;background-color: goldenrod' class="pointer" onMouseOver="msgs2.innerHTML='GoldHEN v2.1.2 [ Fixed config parser ] By SiSTRo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> GoldHen 2.1.2 </B></button></a>
+	<a href="goldhen22.html"><button style='font-size:20px;text-align:center;color:white;background-color: goldenrod' class="pointer" onMouseOver="msgs2.innerHTML='GoldHEN 2.2 [ Added Cheat Menu & tty redirect to klog ] by SISTRo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> GoldHen 2.2 </B></button></a>
+	<a href="goldhen222.html"><button style='font-size:20px;text-align:center;color:white;background-color: goldenrod' class="pointer" onMouseOver="msgs2.innerHTML='GoldHEN 2.2.2 [ Added cheat absolute offset support & Fixed some bugs ] by SISTRo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> GoldHen 2.2.2 </B></button></a>
+	<a href="goldhen23.html"><button style='font-size:20px;text-align:center;color:white;background-color: goldenrod' class="pointer" onMouseOver="msgs2.innerHTML='GoldHEN 2.3 [ Added Title ID. FPS update many more Fixed some bugs ] by SISTRo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> GoldHen 2.3 </B></button></a>
+	<a href="mira75x.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Mira For 7.5X FW'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Mira 7.5X </B></button></a>
+	<a href="payload.html#p0=common/mira.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Bin Loader Port 9021'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Bin Loader </B></button></a>
+	<a href="payload.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Load any payload in .bin format using port 9020'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> NetCat 9020 </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=enable-updates.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Payload to enable updates'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Enable Updates </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=disable-updates.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Payload to Disable FW Updates on PS4'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Disable Update </B></button></a>
+	<br>
+    <br>
+    <div style=font-size:20px;text-align:center;color:yellow;>OTHER PAYLOADS</div>
+    <a href="payload.html#p0=common/mira.js&p1=orbistoolbox.js"><button style='font-size:20px;text-align:center;color:white;background-color: orangered' class="pointer" onMouseOver="msgs2.innerHTML='Orbis-ToolBox Alpha Build 1167 By OSM'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Orbis ToolBox </B></button></a>
+    <a href="http://nightkinghost.com/trainer/index.html"><button style='font-size:20px;text-align:center;color: white;background-color: green' class="pointer" onMouseOver="msgs2.innerHTML='PS4 Offline Trainer'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> PS4 Trainer </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=webrte755.js"><button style='font-size:20px;text-align:center;color: white;background-color: blue' class="pointer" onMouseOver="msgs2.innerHTML='Payload to enable cheats on ps4 made by www.ps4trainer.com'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> WEBRTE </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=payload.js&p2=frontend.js"><button style='font-size:20px;text-align:center;color:blue' class="pointer" onMouseOver="msgs2.innerHTML='Account Web-Activator Offline Account By Sleirsgoevy'" ; onmouseout="msgs2.innerHTML='Status'" type="button"><B> Web Activator </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=dumper.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 120px;' class="pointer" onMouseOver="msgs2.innerHTML='Payload to Dump games and Apps'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Dumper </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=kernel-dumper.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Payload to Dump Kernel'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Kernel Dumper </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=module-dumper.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 190px;' class="pointer" onMouseOver="msgs2.innerHTML='Payload to Dump Kernel Modules'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Module Dumper </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=fan-threshold.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Payload to control fan speed'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Fan Threshold </B></button></a>
+    <br>
+    <br>
+    <a href="payload.html#p0=common/mira.js&p1=kernel-clock.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Payload to adjust kernel clocl'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Kernel Clock </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=rif-renamer.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Payload to Rename .Rif Files'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Rif Renamer </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=ps4debug755.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 120px;' class="pointer" onMouseOver="msgs2.innerHTML='Payload to enable debug features on ps4'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> PS4Debug </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=restore.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 110px;' class="pointer" onMouseOver="msgs2.innerHTML='Payload to restore database'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Restore </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=todex.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 120px;' class="pointer" onMouseOver="msgs2.innerHTML='Payload to enable Dex settings'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> TODEX </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=app2usb.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Payload to transfer games to USB drive'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> App2USB </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=backup.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 120px;' class="pointer" onMouseOver="msgs2.innerHTML='Make a full backup of your database'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Backup </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=enable-browser.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Payload to enable browser'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Enable Browser </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=disable-aslr.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Payload to disable ALSR'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Disable ASLR </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=parentalcontrols.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 200px' class="pointer" onMouseOver="msgs2.innerHTML='PS4 Parental Controls Passcode Notification - if shows 0000 that means passcode is not set'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Parental Controls </B></button></a>
+    <br>
+    <br>
+	<div style=font-size:20px;text-align:center;color:yellow;>LINUX 7.55 FW</div>
+    <a href="payload.html#p0=common/mira.js&p1=linux1gb755.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Linux Loader 1GB Video Ram and 7GB System Ram.'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Linux 1GB </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=linux2gb755.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Linux Loader 2GB Video Ram and 6GB System Ram.'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Linux 2GB </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=linux3gb755.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Linux Loader 3GB Video Ram and 5GB System Ram.'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Linux 3GB </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=linux4gb755.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Linux Loader 4GB Video Ram and 4GB System Ram.'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Linux 4GB </B></button></a>    
+	<a href="payload.html#p0=common/mira.js&p1=linux5gb755.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Linux Loader 5GB Video Ram and 3GB System Ram.'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Linux 5GB </B></button></a>    
+	<br>
+    <br>
+	<div style=font-size:20px;text-align:center;color:yellow;>GTA V / RDR2 MODS</div>
+	<a href="payload.html#p0=common/mira.js&p1=gta_wildemodz132.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 190px;' class="pointer" onMouseOver="msgs2.innerHTML='GTA V WildeModz Mod v1.32 - in Game active Menu with Left Pad + Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> WildeModz v1.32 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=gta_wildemodz133.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 190px;' class="pointer" onMouseOver="msgs2.innerHTML='GTA V WildeModz Mod v1.33 - in Game active Menu with Left Pad + Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> WildeModz v1.33 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=gta_wildemodz138.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 190px;' class="pointer" onMouseOver="msgs2.innerHTML='GTA V WildeModz Mod v1.38 - in Game active Menu with Left Pad + Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> WildeModz v1.38 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=gtav_beefqueefmod133.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 120px;' class="pointer" onMouseOver="msgs2.innerHTML='GTA V Beef Queef Mod v1.33 - in Game active Menu with Right Pad + Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Beef v1.33 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=gtav_beefqueefmod134.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 120px;' class="pointer" onMouseOver="msgs2.innerHTML='GTA V Beef Queef Mod v1.34 - in Game active Menu with Right Pad + Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Beef v1.34 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=gtav_beefqueefmod138.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 120px;' class="pointer" onMouseOver="msgs2.innerHTML='GTA V Beef Queef Mod v1.38 - in Game active Menu with Right Pad + Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Beef v1.38 </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=gtav_arabicguy100.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 160px;' class="pointer" onMouseOver="msgs2.innerHTML='GTA V ArabicGuy Mod v1.00 - in Game active Menu with Right Pad + Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Arabic G v1.00 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=gtav_arabicguy127.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 160px;' class="pointer" onMouseOver="msgs2.innerHTML='GTA V ArabicGuy Mod v1.27 - in Game active Menu with Right Pad + Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Arabic G v1.27 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=gtav_arabicguy132.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 160px;' class="pointer" onMouseOver="msgs2.innerHTML='GTA V ArabicGuy Mod v1.32 - in Game active Menu with Right Pad + Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Arabic G v1.32 </B></button></a>
+	<br>
+	<br>
+  <a href="payload.html#p0=common/mira.js&p1=gtav_lamance100b.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 190px;' class="pointer" onMouseOver="msgs2.innerHTML='Lamance for GTA V Version 1.00 ( Beta ) By david1337hax - Active ---> Right+Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Lamance v1.00b </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=gtavlamance138v09.js"><button style='font-size:20px;text-align:center;color:#4863A0;width: 190px;' class="pointer" onMouseOver="msgs2.innerHTML='GTA V Lamance Mod v1.38 By david1337hax v0.9 - in Game active Menu with  Dpad Right + Square'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Lamance v1.38 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=rdr2v100.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Red dead redemtion 2 mod menu 1.00 - V1.3.6 by RF0oDxM0Dz (R1 + Square)'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> RDR2 V1.00 </B></button></a>
+	<a href="payload.html#p0=common/mira.js&p1=rdr2v113.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Red dead redemtion 2 mod menu 1.13 - V1.3.6 by RF0oDxM0Dz (R1 + Square)'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> RDR2 V1.13 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=rdr2v119.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Red dead redemtion 2 mod menu 1.19 - V1.3.6 by RF0oDxM0Dz (R1 + Square)'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> RDR2 V1.19 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=rdr2v124.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Red dead redemtion 2 mod menu 1.24 - V1.3.6 by RF0oDxM0Dz (R1 + Square)'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> RDR2 V1.24 </B></button></a>
+    <a href="payload.html#p0=common/mira.js&p1=rdr2v129.js"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Red dead redemtion 2 mod menu 1.29 - V1.3.6 by RF0oDxM0Dz (R1 + Square)'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> RDR2 V1.29 </B></button></a>
+	<br><br><a style='font-size:25px;text-align:center;color:#FFD700;'>
+        Main Owner : <a style='font-size:25px;text-align:center;color:white;'>
+          SALT - Find Us In Telegram if you have any kind of issues!&nbsp;<a href="http://t.me/Salt753194"
+            style='font-size:25px;text-align:center;color:red;'>@Salt753194</a>
+			<a style='font-size:25px;text-align:center;color:white;'>And Twitter :&nbsp;
+			<a href="https://twitter.com/salt13939424" style='font-size:25px;text-align:center;color:red;'>@salt13939424</a></h1>
+          <br><a style='font-size:25px;text-align:center;color:#FFD700;'>
+            Credits : <a style='font-size:25px;text-align:center;color:white;'>
+             </h1> <a style='font-size:25px;text-align:center;color:white;'>Sleirgoevy For Webkit and Kex ,
+              ChendoChap for Patch fixes , TylerMods for trainer , bishalqx980 , SGK & Many More ...&nbsp;
+</div>
+    </body>
+    </html>
